@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  background-color: #d7d7d7;
+}
+
+.list h2 {
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(54, 54, 218);
+}
+
+#inProgress h2 {
+    text-align: center;
+    background-color: rgb(174, 180, 55);
+}
+
+#done h2{
+    text-align: center;
+    background-color: #73f556;
+}
+ button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    background-color: #56c0f1;
+    color: #3c3c3c;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  color: #ffffff;
+  font-family: Arial,  sans-serif;
+  text-align: center;
+  background-color: #b0acacae;
+}
+
+.add-task {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-task input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

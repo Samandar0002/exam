@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="list" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>To Do</h2>
+      <ul ondragstart="dragStart(event)" draggable="true" id="todo-list">
+        <li draggable="true" ondragstart="dragStart(event)">To do #1</li>
+        <li draggable="true" ondragstart="dragStart(event)">To do #2</li>
+        <li draggable="true" ondragstart="dragStart(event)">To do #3</li>
+      </ul>
+      <button id="addButtonTodo" onclick="addTask('todo')">Add</button>
+    </div>
+    <div class="list" id="inProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2><span>In Progress</span></h2>
+      <ul ondragstart="dragStart(event)" draggable="true" id="inProgress-list">
+        <li draggable="true" ondragstart="dragStart(event)">IP #1</li>
+        <li draggable="true" ondragstart="dragStart(event)">IP #2</li>
+        <li draggable="true" ondragstart="dragStart(event)">IP #3</li>
+      </ul>
+      <button id="addButtonInProgress" onclick="addTask('inProgress')">Add</button>
+    </div>
+    <div class="list" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2><p>Done</p></h2>
+      <ul ondragstart="dragStart(event)" draggable="true" id="done-list">
+        <li draggable="true" ondragstart="dragStart(event)">Done #1</li>
+        <li draggable="true" ondragstart="dragStart(event)">Done #2</li>
+        <li draggable="true" ondragstart="dragStart(event)">Done #3</li>
+      </ul>
+      <button id="addButtonDone" onclick="addTask('done')">Add</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
